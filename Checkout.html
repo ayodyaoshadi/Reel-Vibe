@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="ml">
+            <img src="images/logo.png" alt="logo" width="100">
+        </div>
+        <div class="mh">
+            <h1>REEL VIBE CINEMA</h1>
+            <p>Your Next Favourite Movie Starts Here</p>
+        </div>
+        <div class="search-bar">
+            <div class="search">
+                <form action="">
+                  <input type="text" placeholder="Search">
+                    <button type="button">
+                        <img src="images/search.jpg" alt="search" width="30" height="15">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About_us.html">About us</a>
+            <a href="Upcoming_movies.html">Upcoming Movies</a>
+            <a href="Cinema_food.html">Cinema Food stall and Food prices</a>
+            <a href="Games.html">Games</a>
+            <a href="Queries_FAQ.html">Queries & FAQs</a>
+            <a href="index.html">Booking</a>
+        </nav>
+        <h3>Bill Pay</h3>
+    <main>
+        <section class="section4">
+            <h2>Your Booking</h2>
+            <table id="checkout-table">
+              <thead>
+                <tr>
+                  <th>Movie</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="checkout-movies">
+                <!-- Filled dynamically from cart -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">Total</td>
+                  <td id="checkout-total">Rs. 0</td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+      
+          <section id="checkout-form">
+              <h4>Secure Checkout</h4>
+              <p>Complete your purchase by filling out the details below.</p>
+              <form id="payment-form" onsubmit="return handlePayment(event)">
+            
+                <!-- Seat Details -->
+                <fieldset>
+                  <legend>Seat Preference</legend>
+                  <label for="movie-select">Choose a Movie:</label>
+                  <select id="movie-select">
+                    <option value="">-- Select a movie --</option>
+                  </select>
+                  <div id="seat-map" class="seat-map"></div>
+                  <div class="seat-legend">
+                    <div><div class="seat"></div> Available</div>
+                    <div><div class="seat selected"></div> Selected</div>
+                    <div><div class="seat booked"></div> Booked</div>
+                  </div>
+                </fieldset>
+                
+                <!-- Personal Details -->
+                <fieldset>
+                  <legend>Personal Details</legend>
+                  <label for="full-name">Full Name:</label>
+                  <input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+                  <br>
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="0712345678">
+                  <br>
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </fieldset>
+
+                <!-- Payment Information -->
+                <fieldset>
+                  <legend>Payment Information</legend>
+                  <label for="card-type">Card Type:</label>
+                  <select id="card-type" name="card-type" required>
+                    <option value="">Select Card Type</option>
+                    <option value="Visa">Visa</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="AmEx">American Express</option>
+                  </select>
+                  <br>
+                  <label for="card-number">Card Number:</label>
+                  <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9123 4567">
+                  <br>
+                  <div class="expiry">
+                    <label for="expire-month">Expire Month:</label>
+                    <input type="number" id="expire-month" name="expire-month" required min="6" max="12" placeholder="MM">
+                    <label for="expire-year">Expire Year:</label>
+                    <input type="number" id="expire-year" name="expire-year" required min="2025" placeholder="YYYY">
+                  </div>
+                  <label for="cvv">CVV:</label>
+                  <input type="text" id="cvv" name="cvv" required placeholder="123">
+                </fieldset>
+            
+                <!-- Pay Button -->
+                <button id="pay-button" type="submit">Pay Securely</button>
+              </form>
+            </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <div class="logo-description">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                    <div class="description">
+                        <p>ReelVibe brings stories to life with latest movies, premium screenings, 3D IMAX shows and unbeatable cinematic
+                          experience. Join us for a journey beyond the screen - comfort, quality and unforgettable moments await.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="images/address.png" alt="address" class="icon">
+                        <p>No. 241/B, Royal Rd, Colombo</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/gmail.jpg" alt="gmail" class="icon">
+                        <p>Reelvibe@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/contact.jpg" alt="contact" class="icon">
+                        <p>011-2971589</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About us</a></li>
+                        <li><a href="Upcoming_movies.html">Upcoming Movies</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="Cinema_food.html">Cinema Food stall and Food prices</a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Queries_FAQ.html">Queries & FAQs</a></li>
+                        <li><a href="index.html">Booking</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

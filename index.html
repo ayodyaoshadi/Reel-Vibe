@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="ml">
+        <img src="images/logo.png" alt="logo" width="100">
+    </div>
+    <div class="mh">
+        <h1>REEL VIBE CINEMA</h1>
+        <p>Your Next Favourite Movie Starts Here</p>
+    </div>
+    <div class="search-bar">
+        <div class="search">
+            <form action="">
+              <input type="text" placeholder="Search">              
+                <button type="button">
+                    <img src="images/search.jpg" alt="search" width="30" height="15">
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About_us.html">About us</a>
+        <a href="Upcoming_movies.html">Upcoming Movies</a>
+        <a href="Cinema_food.html">Cinema Food stall and Food prices</a>
+        <a href="Games.html">Games</a>
+        <a href="Queries_FAQ.html">Queries & FAQs</a>
+        <a href="index.html">Booking</a>
+    </nav>
+        <h3>Reserve Your Seat</h3>
+        <div class="on">
+            <img src="images/Booking.webp" alt="cinema" width="100%" height="300">
+        </div>
+    <main>
+        <section class="section4">
+            <h2>"Welcome to REELVIBE, where the Best Movies Await You."</h2>
+            <div class="category" id="now">
+              <h4>Now Showing</h4>
+              <div class="movies">
+                <div class="movie">
+                  <p class="movie-name">Rani</p>
+                  <img src="images/Rani.jpeg" alt="Rani" width="200" height="300">
+                  <p>A ticket - Rs. 700.00</p>
+                  <label for="quantity-rani">Quantity:</label>
+                  <input type="number" id="quantity-rani" min="1" value="1">
+                  <br>
+                  <label for="date-rani">Select Date:</label>
+                  <select id="date-rani">
+                    <option value="2025-04-25">April 25, 2025</option>
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-04-28">April 28, 2025</option>
+                    <option value="2025-04-30">April 30, 2025</option>
+                  </select>
+                  <label for="time-rani">Select Time:</label>
+                  <select id="time-rani">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Rani" data-price="700.00" data-quantity-id="quantity-rani" data-date-id="date-rani" data-time-id="time-rani">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Accountant 2</p>
+                  <img src="images/Accountant.jpeg" alt="Accountant" width="200" height="300">
+                  <p>A ticket - Rs. 750.00</p>
+                  <label for="quantity-accountant">Quantity:</label>
+                  <input type="number" id="quantity-accountant" min="1" value="1">
+                  <br>
+                  <label for="date-accountant">Select Date:</label>
+                  <select id="date-accountant">
+                    <option value="2025-04-25">April 25, 2025</option>
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-04-28">April 28, 2025</option>
+                    <option value="2025-04-30">April 30, 2025</option>
+                  </select>
+                  <label for="time-accountant">Select Time:</label>
+                  <select id="time-accountant">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Accountant 2" data-price="750.00" data-quantity-id="quantity-accountant" data-date-id="date-accountant" data-time-id="time-accountant">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Good Bad Ugly</p>
+                  <img src="images/Good.jpeg" alt="Good" width="200" height="300">
+                  <p>A ticket - Rs. 850.00</p>
+                  <label for="quantity-good">Quantity:</label>
+                  <input type="number" id="quantity-good" min="1" value="1">
+                  <br>
+                  <label for="date-good">Select Date:</label>
+                  <select id="date-good">
+                    <option value="2025-04-25">April 25, 2025</option>
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-04-28">April 28, 2025</option>
+                    <option value="2025-04-30">April 30, 2025</option>
+                  </select>
+                  <label for="time-good">Select Time:</label>
+                  <select id="time-good">
+                    <option value="13:30">1:30 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Good Bad Ugly" data-price="850.00" data-quantity-id="quantity-good" data-date-id="date-good" data-time-id="time-good">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Drop</p>
+                  <img src="images/Drop.jpeg" alt="Drop" width="200" height="300">
+                  <p>A ticket - Rs. 750.00</p>
+                  <label for="quantity-drop">Quantity:</label>
+                  <input type="number" id="quantity-drop" min="1" value="1">
+                  <br>
+                  <label for="date-drop">Select Date:</label>
+                  <select id="date-drop">
+                    <option value="2025-04-25">April 25, 2025</option>
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-04-28">April 28, 2025</option>
+                    <option value="2025-04-30">April 30, 2025</option>
+                  </select>
+                  <label for="time-drop">Select Time:</label>
+                  <select id="time-drop">
+                    <option value="13:30">13:30 PM</option>
+                    <option value="21:30">21:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Drop" data-price="750.00" data-quantity-id="quantity-drop" data-date-id="date-drop" data-time-id="time-drop">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Amateur</p>
+                  <img src="images/Amateur.jpg" alt="Amateur" width="200" height="300">
+                  <p>A ticket - Rs. 800.00</p>
+                  <label for="quantity-amateur">Quantity:</label>
+                  <input type="number" id="quantity-amateur" min="1" value="1">
+                  <br>
+                  <label for="date-amateur">Select Date:</label>
+                  <select id="date-amateur">
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-05-01">May 01, 2025</option>
+                  </select>
+                  <label for="time-amateur">Select Time:</label>
+                  <select id="time-amateur">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">13:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Amateur" data-price="800.00" data-quantity-id="quantity-amateur" data-date-id="date-amateur" data-time-id="time-amateur">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Walampoori</p>
+                  <img src="images/Walampoori.jpeg" alt="Walampoori" width="200" height="300">
+                  <p>A ticket - Rs. 700.00</p>
+                  <label for="quantity-walampoori">Quantity:</label>
+                  <input type="number" id="quantity-walampoori" min="1" value="1">
+                  <br>
+                  <label for="date-walampoori">Select Date:</label>
+                  <select id="date-walampoori">
+                    <option value="2025-04-26">April 26, 2025</option>
+                    <option value="2025-04-27">April 27, 2025</option>
+                    <option value="2025-05-01">May 01, 2025</option>
+                  </select>
+                  <label for="time-walampoori">Select Time:</label>
+                  <select id="time-walampoori">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">13:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Walampoori" data-price ="700.00" data-quantity-id="quantity-walampoori" data-date-id="date-walampoori" data-time-id="time-walampoori">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="upcoming">
+              <h4>Upcoming Movies</h4>
+              <div class="movies">
+                <div class="movie1">
+                  <p class="movie-name">Retro</p>
+                  <img src="images/Retro.jpg" alt="Retro" width="200" height="300">
+                  <p>A ticket - Rs. 800.00</p>
+                  <label for="quantity-retro">Quantity:</label>
+                  <input type="number" id="quantity-retro" min="1" value="1">
+                  <br>
+                  <label for="date-retro">Select Date:</label>
+                  <select id="date-retro">
+                    <option value="2025-05-03">May 03, 2025</option>
+                    <option value="2025-05-04">May 04, 2025</option>
+                    <option value="2025-05-05">May 05, 2025</option>
+                    <option value="2025-05-06">May 06, 2025</option>
+                    <option value="2025-05-07">May 07, 2025</option>
+                  </select>
+                  <label for="time-retro">Select Time:</label>
+                  <select id="time-retro">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Retro" data-price="800.00" data-quantity-id="quantity-retro" data-date-id="date-retro" data-time-id="time-retro">Add to Cart</button>
+                </div>
+                <div class="movie2">
+                  <p class="movie-name">Mission: Impossible - The Final Reckoning</p>
+                  <img src="images/Mission.jpeg" alt="Mission" width="200" height="300">
+                  <p>A ticket - Rs. 800.00</p>
+                  <label for="quantity-mission:">Quantity:</label>
+                  <input type="number" id="quantity-mission:" min="1" value="1">
+                  <br>
+                  <label for="date-mission:">Select Date:</label>
+                  <select id="date-mission:">
+                    <option value="2025-05-23">May 23, 2025</option>
+                    <option value="2025-05-24">May 24, 2025</option>
+                    <option value="2025-05-25">May 25, 2025</option>
+                    <option value="2025-05-26">May 26, 2025</option>
+                    <option value="2025-05-27">May 27, 2025</option>
+                  </select>
+                  <label for="time-mission:">Select Time:</label>
+                  <select id="time-mission:">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Mission: Impossible - The Final Reckoning" data-price="800.00" data-quantity-id="quantity-mission:" data-date-id="date-mission:" data-time-id="time-mission:">Add to Cart</button>
+                </div>
+                <div class="movie3">
+                  <p class="movie-name">Karate Kid: Legends</p>
+                  <img src="images/Karate.jpg" alt="Karate" width="200" height="300">
+                  <p>A ticket - Rs. 800.00</p>
+                  <label for="quantity-karate">Quantity:</label>
+                  <input type="number" id="quantity-karate" min="1" value="1">
+                  <br>
+                  <label for="date-karate">Select Date:</label>
+                  <select id="date-karate">
+                    <option value="2025-05-30">May 30, 2025</option>
+                    <option value="2025-05-31">May 31, 2025</option>
+                    <option value="2025-06-01">June 01, 2025</option>
+                    <option value="2025-06-02">June 02, 2025</option>
+                    <option value="2025-06-03">June 03, 2025</option>
+                  </select>
+                  <label for="time-karate">Select Time:</label>
+                  <select id="time-karate">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Karate Kid: Legends" data-price="800.00" data-quantity-id="quantity-karate" data-date-id="date-karate" data-time-id="time-karate">Add to Cart</button>
+                </div>
+                <div class="movie4">
+                  <p class="movie-name">How to Train Your Dragon</p>
+                  <img src="images/Dragon.jpeg" alt="Dragon" width="200" height="300">
+                  <p>A ticket - Rs. 700.00</p>
+                  <label for="quantity-how">Quantity:</label>
+                  <input type="number" id="quantity-how" min="1" value="1">
+                  <br>
+                  <label for="date-how">Select Date:</label>
+                  <select id="date-how">
+                    <option value="2025-06-13">June 13, 2025</option>
+                    <option value="2025-06-14">June 14, 2025</option>
+                    <option value="2025-06-15">June 15, 2025</option>
+                    <option value="2025-06-16">June 16, 2025</option>
+                    <option value="2025-06-17">June 17, 2025</option>
+                  </select>
+                  <label for="time-how">Select Time:</label>
+                  <select id="time-how">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="How to Train Your Dragon" data-price="700.00" data-quantity-id="quantity-how" data-date-id="date-how" data-time-id="time-how">Add to Cart</button>
+                </div>
+                <div class="movie5">
+                  <p class="movie-name">Kubera</p>
+                  <img src="images/Kubera.jpg" alt="Kubera" width="200" height="300">
+                  <p>A ticket - Rs. 750.00</p>
+                  <label for="quantity-kubera">Quantity:</label>
+                  <input type="number" id="quantity-kubera" min="1" value="1">
+                  <br>
+                  <label for="date-kubera">Select Date:</label>
+                  <select id="date-kubera">
+                    <option value="2025-06-20">June 20, 2025</option>
+                    <option value="2025-06-21">June 21, 2025</option>
+                    <option value="2025-06-22">June 22, 2025</option>
+                    <option value="2025-06-23">June 23, 2025</option>
+                    <option value="2025-06-24">June 24, 2025</option>
+                  </select>
+                  <label for="time-kubera">Select Time:</label>
+                  <select id="time-kubera">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Kubera" data-price="750.00" data-quantity-id="quantity-kubera" data-date-id="date-kubera" data-time-id="time-kubera">Add to Cart</button>
+                </div>
+                <div class="movie6">
+                  <p class="movie-name">M3gan 2.0</p>
+                  <img src="images/M3gan.jpg" alt="M3gan" width="200" height="300">
+                  <p>A ticket - Rs. 800.00</p>
+                  <label for="quantity-m3gan">Quantity:</label>
+                  <input type="number" id="quantity-m3gan" min="1" value="1">
+                  <br>
+                  <label for="date-m3gan">Select Date:</label>
+                  <select id="date-m3gan">
+                    <option value="2025-06-27">June 27, 2025</option>
+                    <option value="2025-06-28">June 28, 2025</option>
+                    <option value="2025-06-29">June 29, 2025</option>
+                    <option value="2025-06-30">June 30, 2025</option>
+                    <option value="2025-07-01">July 01, 2025</option>
+                  </select>
+                  <label for="time-m3gan">Select Time:</label>
+                  <select id="time-m3gan">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="M3gan 2.0" data-price="800.00" data-quantity-id="quantity-m3gan" data-date-id="date-m3gan" data-time-id="time-m3gan">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="premium">
+              <h4>Premium Screenings</h4>
+              <div class="movies">
+                <div class="movie">
+                  <p class="movie-name">Pink Floyd at Pompeii - MCMLXXII</p>
+                  <img src="images/Pink.jpg" alt="Pink" width="200" height="300">
+                  <p>A ticket - Rs. 1650.00</p>
+                  <label for="quantity-pink">Quantity:</label>
+                  <input type="number" id="quantity-pink" min="1" value="1">
+                  <br>
+                  <label for="date-pink">Select Date:</label>
+                  <select id="date-pink">
+                    <option value="2025-04-29">April 29, 2025</option>
+                    <option value="2025-05-02">May 02, 2025</option>
+                    <option value="2025-05-03">May 03, 2025</option>
+                    <option value="2025-05-04">May 04, 2025</option>
+                    <option value="2025-05-05">May 05, 2025</option>
+                  </select>
+                  <label for="time-pink">Select Time:</label>
+                  <select id="time-pink">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Pink Floyd at Pompeii - MCMLXXII" data-price="1650.00" data-quantity-id="quantity-pink" data-date-id="date-pink" data-time-id="time-pink">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Romeo Juliet</p>
+                  <img src="images/Romeo.jpg" alt="Romeo" width="200" height="300">
+                  <p>A ticket - Rs. 1600.00</p>
+                  <label for="quantity-romeo">Quantity:</label>
+                  <input type="number" id="quantity-romeo" min="1" value="1">
+                  <br>
+                  <label for="date-romeo">Select Date:</label>
+                  <select id="date-romeo">
+                    <option value="2025-04-29">April 29, 2025</option>
+                    <option value="2025-05-02">May 02, 2025</option>
+                    <option value="2025-05-06">May 06, 2025</option>
+                    <option value="2025-05-07">May 07, 2025</option>
+                  </select>
+                  <label for="time-romeo">Select Time:</label>
+                  <select id="time-romeo">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Romeo Juliet" data-price="1600.00" data-quantity-id="quantity-romeo" data-date-id="date-romeo" data-time-id="time-romeo">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Seventeen[Right here] World Tour in Cinemas</p>
+                  <img src="images/Seventeen.jpg" alt="Seventeen" width="200" height="300">
+                  <p>A ticket - Rs. 1600.00</p>
+                  <label for="quantity-seventeen">Quantity:</label>
+                  <input type="number" id="quantity-seventeen" min="1" value="1">
+                  <br>
+                  <label for="date-seventeen">Select Date:</label>
+                  <select id="date-seventeen">
+                    <option value="2025-04-29">April 29, 2025</option>
+                    <option value="2025-05-02">May 02, 2025</option>
+                    <option value="2025-05-03">May 03, 2025</option>
+                    <option value="2025-05-04">May 04, 2025</option>
+                    <option value="2025-05-05">May 05, 2025</option>
+                  </select>
+                  <label for="time-seventeen">Select Time:</label>
+                  <select id="time-seventeen">
+                    <option value="13:00">1:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Seventeen World Tour in Cinemas" data-price="1600.00" data-quantity-id="quantity-seventeen" data-date-id="date-seventeen" data-time-id="time-seventeen">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Sinners</p>
+                  <img src="images/Sinners.jpeg" alt="Sinners" width="200" height="300">
+                  <p>A ticket - Rs. 1700.00</p>
+                  <label for="quantity-sinners">Quantity:</label>
+                  <input type="number" id="quantity-sinners" min="1" value="1">
+                  <br>
+                  <label for="date-sinners">Select Date:</label>
+                  <select id="date-sinners">
+                    <option value="2025-05-08">May 08, 2025</option>
+                    <option value="2025-05-09">May 09, 2025</option>
+                    <option value="2025-05-10">May 10, 2025</option>
+                    <option value="2025-05-11">May 11, 2025</option>
+                    <option value="2025-05-12">May 12, 2025</option>
+                  </select>
+                  <label for="time-sinners">Select Time:</label>
+                  <select id="time-sinners">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Sinners" data-price="1700.00" data-quantity-id="quantity-sinners" data-date-id="date-sinners" data-time-id="time-sinners">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Grand Heist</p>
+                  <img src="images/Grand.jpeg" alt="Grand" width="200" height="300">
+                  <p>A ticket - Rs. 1600.00</p>
+                  <label for="quantity-grand">Quantity:</label>
+                  <input type="number" id="quantity-grand" min="1" value="1">
+                  <br>
+                  <label for="date-grand">Select Date:</label>
+                  <select id="date-grand">
+                    <option value="2025-05-08">May 08, 2025</option>
+                    <option value="2025-05-09">May 09, 2025</option>
+                    <option value="2025-05-10">May 10, 2025</option>
+                    <option value="2025-05-11">May 11, 2025</option>
+                    <option value="2025-05-12">May 12, 2025</option>
+                  </select>
+                  <label for="time-grand">Select Time:</label>
+                  <select id="time-grand">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Grand Heist" data-price="1600.00" data-quantity-id="quantity-grand" data-date-id="date-grand" data-time-id="time-grand">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Mickey 17</p>
+                  <img src="images/Mickey.jpeg" alt="Mickey" width="200" height="300">
+                  <p>A ticket - Rs. 1600.00</p>
+                  <label for="quantity-mickey">Quantity:</label>
+                  <input type="number" id="quantity-mickey" min="1" value="1">
+                  <br>
+                  <label for="date-mickey">Select Date:</label>
+                  <select id="date-mickey">
+                    <option value="2025-04-29">April 29, 2025</option>
+                    <option value="2025-05-02">May 02, 2025</option>
+                    <option value="2025-05-06">May 06, 2025</option>
+                    <option value="2025-05-07">May 07, 2025</option>
+                  </select>
+                  <label for="time-mickey">Select Time:</label>
+                  <select id="time-mickey">
+                    <option value="13:00">1:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Mickey 17" data-price="1600.00" data-quantity-id="quantity-mickey" data-date-id="date-mickey" data-time-id="time-mickey">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="imax">
+              <h4>3D & IMAX Shows</h4>
+              <div class="movies">
+                <div class="movie">
+                  <p class="movie-name">A Minecraft Movie</p>
+                  <img src="images/Minecraft.jpeg" alt="Minecraft" width="200" height="300">
+                  <p>A ticket - Rs. 1400.00</p>
+                  <label for="quantity-a">Quantity:</label>
+                  <input type="number" id="quantity-a" min="1" value="1">
+                  <br>
+                  <label for="date-a">Select Date:</label>
+                  <select id="date-a">
+                    <option value="2025-05-10">May 10, 2025</option>
+                    <option value="2025-05-11">May 11, 2025</option>
+                    <option value="2025-05-12">May 12, 2025</option>
+                  </select>
+                  <label for="time-a">Select Time:</label>
+                  <select id="time-a">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="A Minecraft Movie" data-price="1400.00" data-quantity-id="quantity-a" data-date-id="date-a" data-time-id="time-a">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Deep Sea</p>
+                  <img src="images/Deep.jpg" alt="Deep" width="200" height="300">
+                  <p>A ticket - Rs. 1450.00</p>
+                  <label for="quantity-deep">Quantity:</label>
+                  <input type="number" id="quantity-deep" min="1" value="1">
+                  <br>
+                  <label for="date-deep">Select Date:</label>
+                  <select id="date-deep">
+                    <option value="2025-05-17">May 17, 2025</option>
+                    <option value="2025-05-18">May 18, 2025</option>
+                    <option value="2025-05-19">May 19, 2025</option>
+                  </select>
+                  <label for="time-deep">Select Time:</label>
+                  <select id="time-deep">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 AM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Deep Sea" data-price="1450.00" data-quantity-id="quantity-deep" data-date-id="date-deep" data-time-id="time-deep">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Moana 2</p>
+                  <img src="images/Moana.jpeg" alt="Moana" width="200" height="300">
+                  <p>A ticket - Rs. 1400.00</p>
+                  <label for="quantity-moana">Quantity:</label>
+                  <input type="number" id="quantity-moana" min="1" value="1">
+                  <br>
+                  <label for="date-moana">Select Date:</label>
+                  <select id="date-moana">
+                    <option value="2025-05-13">May 13, 2025</option>
+                    <option value="2025-05-14">May 14, 2025</option>
+                    <option value="2025-05-15">May 15, 2025</option>
+                    <option value="2025-05-16">May 16, 2025</option>
+                  </select>
+                  <label for="time-moana">Select Time:</label>
+                  <select id="time-moana">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 AM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Moana 2" data-price="1400.00" data-quantity-id="quantity-moana" data-date-id="date-moana" data-time-id="time-moana">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Mufasa: The Lion King</p>
+                  <img src="images/Mufasa.jpeg" alt="Mufasa" width="200" height="300">
+                  <p>A ticket - Rs. 1450.00</p>
+                  <label for="quantity-mufasa:">Quantity:</label>
+                  <input type="number" id="quantity-mufasa:" min="1" value="1">
+                  <br>
+                  <label for="date-mufasa:">Select Date:</label>
+                  <select id="date-mufasa:">
+                    <option value="2025-05-15">May 15, 2025</option>
+                    <option value="2025-05-16">May 16, 2025</option>
+                    <option value="2025-05-17">May 17, 2025</option>
+                    <option value="2025-05-18">May 18, 2025</option>
+                    <option value="2025-05-19">May 19, 2025</option>
+                  </select>
+                  <label for="time-mufasa:">Select Time:</label>
+                  <select id="time-mufasa:">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 AM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Mufasa: The Lion King" data-price="1450.00" data-quantity-id="quantity-mufasa:" data-date-id="date-mufasa:" data-time-id="time-mufasa:">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Trollhunters: Rise of the Titans</p>
+                  <img src="images/Rise.jpg" alt="Rise" width="200" height="300">
+                  <p>A ticket - Rs. 1400.00</p>
+                  <label for="quantity-trollhunters:">Quantity:</label>
+                  <input type="number" id="quantity-trollhunters:" min="1" value="1">
+                  <br>
+                  <label for="date-trollhunters:">Select Date:</label>
+                  <select id="date-trollhunters:">
+                    <option value="2025-05-13">May 13, 2025</option>
+                    <option value="2025-05-14">May 14, 2025</option>
+                    <option value="2025-05-20">May 20, 2025</option>
+                    <option value="2025-05-21">May 21, 2025</option>
+                    <option value="2025-05-22">May 22, 2025</option>
+                  </select>
+                  <label for="time-trollhunters:">Select Time:</label>
+                  <select id="time-trollhunters:">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 AM</option>
+                    <option value="19:00">7:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Trollhunters: Rise of the Titans" data-price="1400.00" data-quantity-id="quantity-trollhunters:" data-date-id="date-trollhunters:" data-time-id="time-trollhunters:">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Sea Rex</p>
+                  <img src="images/Sea.jpg" alt="Sea" width="200" height="300">
+                  <p>A ticket - Rs. 1400.00</p>
+                  <label for="quantity-sea">Quantity:</label>
+                  <input type="number" id="quantity-sea" min="1" value="1">
+                  <br>
+                  <label for="date-sea">Select Date:</label>
+                  <select id="date-sea">
+                    <option value="2025-05-23">May 23, 2025</option>
+                    <option value="2025-05-24">May 24, 2025</option>
+                    <option value="2025-05-25">May 25, 2025</option>
+                    <option value="2025-05-26">May 26, 2025</option>
+                    <option value="2025-05-27">May 27, 2025</option>
+                  </select>
+                  <label for="time-sea">Select Time:</label>
+                  <select id="time-sea">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Sea Rex" data-price="1400.00" data-quantity-id="quantity-sea" data-date-id="date-sea" data-time-id="time-sea">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="category" id="discount">
+              <h4>Special Discount Offers</h4>
+              <div class="movies">
+                <div class="movie">
+                  <p class="movie-name">Friend</p>
+                  <img src="images/Friend.jpeg" alt="Friend" width="200" height="300">
+                  <p>A ticket - Rs. 500.00</p>
+                  <label for="quantity-friend">Quantity:</label>
+                  <input type="number" id="quantity-friend" min="1" value="1">
+                  <br>
+                  <label for="date-the">Select Date:</label>
+                  <select id="date-the">
+                    <option value="2025-04-25">April 25, 2025</option>
+                    <option value="2025-04-28">April 28, 2025</option>
+                    <option value="2025-04-30">April 30, 2025</option>
+                  </select>
+                  <label for="time-the">Select Time:</label>
+                  <select id="time-the">
+                    <option value="10:00">10:00 AM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Friend" data-price="500.00" data-quantity-id="quantity-friend" data-date-id="date-friend" data-time-id="time-friend">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Angry Men</p>
+                  <img src="images/Angry.jpeg" alt="Angry" width="200" height="300">
+                  <p>A ticket - Rs. 600.00</p>
+                  <label for="quantity-angry">Quantity:</label>
+                  <input type="number" id="quantity-angry" min="1" value="1">
+                  <br>
+                  <label for="date-angry">Select Date:</label>
+                  <select id="date-angry">
+                    <option value="2025-05-24">May 24, 2025</option>
+                    <option value="2025-05-25">May 25, 2025</option>
+                  </select>
+                  <label for="time-angry">Select Time:</label>
+                  <select id="time-angry">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Angry Men" data-price="600.00" data-quantity-id="quantity-angry" data-date-id="date-angry" data-time-id="time-angry">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Haunted Hotel</p>
+                  <img src="images/Haunted.jpeg" alt="Haunted" width="200" height="300">
+                  <p>A ticket - Rs. 600.00</p>
+                  <label for="quantity-haunted">Quantity:</label>
+                  <input type="number" id="quantity-haunted" min="1" value="1">
+                  <br>
+                  <label for="date-haunted">Select Date:</label>
+                  <select id="date-haunted">
+                    <option value="2025-05-23">May 23, 2025</option>
+                    <option value="2025-05-26">May 26, 2025</option>
+                    <option value="2025-05-27">May 27, 2025</option>
+                  </select>
+                  <label for="time-haunted">Select Time:</label>
+                  <select id="time-haunted">
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Haunted Hotel" data-price="600.00" data-quantity-id="quantity-haunted" data-date-id="date-haunted" data-time-id="time-haunted">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Broken Whispers</p>
+                  <img src="images/Broken.jpg" alt="Broken" width="200" height="300">
+                  <p>A ticket - Rs. 500.00</p>
+                  <label for="quantity-broken">Quantity:</label>
+                  <input type="number" id="quantity-broken" min="1" value="1">
+                  <br>
+                  <label for="date-broken">Select Date:</label>
+                  <select id="date-broken">
+                    <option value="2025-05-28">May 28, 2025</option>
+                    <option value="2025-05-29">May 29, 2025</option>
+                    <option value="2025-05-30">May 30, 2025</option>
+                  </select>
+                  <label for="time-broken">Select Time:</label>
+                  <select id="time-broken">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Broken Whispers" data-price="500.00" data-quantity-id="quantity-broken" data-date-id="date-broken" data-time-id="time-broken">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">Rear Window</p>
+                  <img src="images/Rear.jpeg" alt="Rear" width="200" height="300">
+                  <p>A ticket - Rs. 500.00</p>
+                  <label for="quantity-rear">Quantity:</label>
+                  <input type="number" id="quantity-rear" min="1" value="1">
+                  <br>
+                  <label for="date-rear">Select Date:</label>
+                  <select id="date-rear">
+                    <option value="2025-05-24">May 24, 2025</option>
+                    <option value="2025-05-25">May 25, 2025</option>
+                  </select>
+                  <label for="time-rear">Select Time:</label>
+                  <select id="time-rear">
+                    <option value="10:00">10:00 AM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="Rear Window" data-price="500.00" data-quantity-id="quantity-rear" data-date-id="date-rear" data-time-id="time-rear">Add to Cart</button>
+                </div>
+                <div class="movie">
+                  <p class="movie-name">BlackWater Lane</p>
+                  <img src="images/Lane.jpg" alt="Lane" width="200" height="300">
+                  <p>A ticket - Rs. 600.00</p>
+                  <label for="quantity-blackwater">Quantity:</label>
+                  <input type="number" id="quantity-blackwater" min="1" value="1">
+                  <br>
+                  <label for="date-blackwater">Select Date:</label>
+                  <select id="date-blackwater">
+                    <option value="2025-05-31">May 31, 2025</option>
+                    <option value="2025-06-01">June 01, 2025</option>
+                  </select>
+                  <label for="time-blackwater">Select Time:</label>
+                  <select id="time-blackwater">
+                    <option value="16:00">4:00 PM</option>
+                    <option value="18:45">6:45 PM</option>
+                  </select>
+                  <br>
+                  <button class="add-to-cart" data-movie="BlackWater Lane" data-price="600.00" data-quantity-id="quantity-blackwater" data-date-id="date-blackwater" data-time-id="time-blackwater">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section id="cart">
+            <h2>Booking Cart</h2>
+            <table id="cart-table">
+              <thead>
+                <tr>
+                  <th>Movie</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="cart-movies">
+                <!-- Movies added dynamically -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="5">Total</td>
+                  <td id="total-price">Rs. 0</td>
+                </tr>
+              </tfoot>
+            </table>
+            <button id="proceed-to-checkout">Proceed to Checkout</button>
+          </section>
+          <button id="save-as-favourites">Save as Favourites</button>
+          <button id="apply-favourites">Apply Favourites</button>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <div class="logo-description">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                    <div class="description">
+                        <p>Our unwavering commitment to compassionate patient care, innovation & outstanding patient 
+                            outcomes has earned us the position of trust we enjoy. With a focus on personalized care and 
+                            attention to detail, we strive to exceed the expectations of our patients.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="images/address.png" alt="address" class="icon">
+                        <p>No. 241/B, Royal Rd, Colombo</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/gmail.jpg" alt="gmail" class="icon">
+                        <p>Reelvibe@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/contact.jpg" alt="contact" class="icon">
+                        <p>011-2971589</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About_us.html">About us</a></li>
+                        <li><a href="Upcoming_movies.html">Upcoming Movies</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="Cinema_food.html">Cinema Food stall and Food prices</a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Queries_FAQ.html">Queries & FAQs</a></li>
+                        <li><a href="index.html">Booking</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
